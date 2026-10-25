@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord Text Web Analysis — Capstone Project Poster</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #111827 !important;
+        padding: 0 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .poster-card {
+        border-color: #d1d5db !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+      }
+      @page {
+        size: A3 landscape;
+        margin: 1cm;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased p-6 lg:p-10 min-h-screen">
+
+  <!-- Print Instruction Bar -->
+  <div class="no-print max-w-7xl mx-auto mb-6 p-4 rounded-xl bg-indigo-900/40 border border-indigo-500/40 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="p-2 rounded-lg bg-indigo-600 text-white font-bold text-xs">A3 / A2 POSTER</span>
+      <p class="text-xs text-indigo-200">
+        Ready for academic defense & conference presentation. Press <kbd class="px-2 py-0.5 rounded bg-slate-800 text-white font-mono text-xs">Ctrl + P</kbd> in your browser to print or export as PDF.
+      </p>
+    </div>
+    <button onclick="window.print()" class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-md transition flex items-center gap-2">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+      Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- Master Poster Container -->
+  <div class="max-w-7xl mx-auto space-y-6">
+
+    <!-- Poster Header Banner -->
+    <header class="p-6 lg:p-8 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 border-2 border-indigo-500/30 shadow-2xl text-center space-y-2">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs font-bold uppercase tracking-widest">
+        Final Year Capstone Engineering Project • Academic Year 2026–2027
+      </div>
+      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+        DISCORD TEXT WEB ANALYSIS — FULL-STACK AI PLATFORM
+      </h1>
+      <p class="text-sm sm:text-base text-slate-300 font-medium max-w-4xl mx-auto">
+        Integrating Text Analytics, Web Analytics, Social Media Mining, Sentiment Analysis, and Recommendation Systems
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-6 pt-3 text-xs text-slate-400 border-t border-slate-800">
+        <span><strong>Department:</strong> Computer Science & Engineering</span>
+        <span>•</span>
+        <span><strong>Technology Stack:</strong> Python, FastAPI, React 18, Vite, Scikit-Learn, spaCy, NetworkX</span>
+        <span>•</span>
+        <span><strong>Verification:</strong> 18 Automated Tests Passing (100%)</span>
+      </div>
+    </header>
+
+    <!-- 3-Column Symposium Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+      <!-- ================= COLUMN 1 ================= -->
+      <div class="space-y-6">
+
+        <!-- Card 1.1: Problem Statement & Objectives -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-indigo-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+            1. Problem Statement & Motivation
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Real-time chat on Discord hosts millions of asynchronous, high-velocity discussions. Analyzing this data is challenging:
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1.5 list-disc pl-4">
+            <li><strong>Lexical Noise:</strong> Highly saturated with gamer slang (<em>"clutch"</em>, <em>"diff"</em>, <em>"inting"</em>), shorthand, and emojis.</li>
+            <li><strong>Entity Ambiguity:</strong> Standard NER models misidentify gaming titles and publisher organizations.</li>
+            <li><strong>Black-Box Opacity:</strong> Lack of glass-box interpretability and honest test set validation.</li>
+          </ul>
+          <div class="p-3 rounded-lg bg-slate-950 border border-slate-800 text-xs text-indigo-200">
+            <strong>Project Goal:</strong> Build a complete, production-grade interactive platform converting raw Discord conversations into actionable community intelligence, graph networks, and game recommendations.
+          </div>
+        </section>
+
+        <!-- Card 1.2: NLP Preprocessing Pipeline -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            2. Multi-Stage NLP Preprocessing Pipeline
+          </div>
+          <div class="space-y-2 text-xs">
+            <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-200">Stage 1: Regex Normalization</span>
+                <p class="text-[11px] text-slate-400">Strips URLs, mentions (<code class="text-indigo-400">@user</code>), channels (<code class="text-emerald-400">#channel</code>), and emojis</p>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-indigo-900/60 text-indigo-300 font-mono">Regex</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-200">Stage 2: Lexical Tokenization</span>
+                <p class="text-[11px] text-slate-400">Splits normalized text into discrete tokens; stopword filtering</p>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 font-mono">NLTK</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-200">Stage 3: WordNet Lemmatization</span>
+                <p class="text-[11px] text-slate-400">Morphological root reduction: <code class="text-amber-400">better &rarr; good</code>, <code class="text-amber-400">playing &rarr; play</code></p>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-amber-900/60 text-amber-300 font-mono">WordNet</span>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 flex justify-between items-center">
+              <div>
+                <span class="font-bold text-slate-200">Stage 4: Gaming Slang Parser</span>
+                <p class="text-[11px] text-slate-400">Maps 25+ gaming slang terms (<code class="text-rose-400">clutch</code>, <code class="text-rose-400">diff</code>, <code class="text-rose-400">pog</code>, <code class="text-rose-400">smurf</code>)</p>
+              </div>
+              <span class="text-[10px] px-2 py-0.5 rounded bg-rose-900/60 text-rose-300 font-mono">Lexicon</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 1.3: Named Entity Recognition & Wikidata Linking -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+            3. spaCy NER & Wikidata Knowledge Graph Linking
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Extracts Persons, Organizations, Locations, and Game Titles. Mentions are resolved to unique <strong>Wikidata QIDs</strong> to disambiguate domain entities:
+          </p>
+          <div class="space-y-1.5 text-xs font-mono">
+            <div class="p-2 rounded bg-slate-950 border border-slate-800 flex justify-between items-center">
+              <span class="text-indigo-300">Valorant (GAME)</span>
+              <span class="text-amber-300 text-[11px]">Q85786049 &bull; Riot Games</span>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800 flex justify-between items-center">
+              <span class="text-emerald-300">Elden Ring (GAME)</span>
+              <span class="text-amber-300 text-[11px]">Q64506306 &bull; FromSoftware</span>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800 flex justify-between items-center">
+              <span class="text-rose-300">Baldur's Gate 3 (GAME)</span>
+              <span class="text-amber-300 text-[11px]">Q64493013 &bull; Larian Studios</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================= COLUMN 2 ================= -->
+      <div class="space-y-6">
+
+        <!-- Card 2.1: System Architecture Flow -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-cyan-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span>
+            4. End-to-End System Architecture
+          </div>
+          <div class="p-3 rounded-lg bg-slate-950 border border-slate-800 text-center space-y-2 text-xs">
+            <div class="grid grid-cols-3 gap-2 text-[11px] font-bold">
+              <div class="p-2 rounded bg-indigo-950/70 border border-indigo-700/50 text-indigo-300">
+                React 18 SPA<br><span class="text-[10px] text-slate-400">Vite &bull; Tailwind &bull; Recharts</span>
+              </div>
+              <div class="p-2 rounded bg-cyan-950/70 border border-cyan-700/50 text-cyan-300">
+                FastAPI Gateway<br><span class="text-[10px] text-slate-400">Pydantic v2 &bull; Uvicorn</span>
+              </div>
+              <div class="p-2 rounded bg-emerald-950/70 border border-emerald-700/50 text-emerald-300">
+                Persistence Tier<br><span class="text-[10px] text-slate-400">SQLite &bull; SQLAlchemy ORM</span>
+              </div>
+            </div>
+            <div class="text-[11px] text-slate-400 pt-1">
+              &uarr;&darr; REST API Endpoints with Sub-15ms In-Memory Computation
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 2.2: Unsupervised Topic Modeling (NMF) -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-purple-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+            5. Unsupervised Topic Discovery (NMF Decomposition)
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Decomposes sparse document-term space $V_{M \times N} \approx W_{M \times K} \times H_{K \times N}$ into $K = 5$ non-negative coherent components:
+          </p>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-indigo-400 font-bold text-[11px]">1. Tactical Shooters</span>
+              <p class="text-[10px] text-slate-400 font-mono">valorant, clutch, strike, ranked</p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-emerald-400 font-bold text-[11px]">2. RPGs & Lore</span>
+              <p class="text-[10px] text-slate-400 font-mono">elden, ring, baldurs, gate, boss</p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-amber-400 font-bold text-[11px]">3. Indies & Roguelikes</span>
+              <p class="text-[10px] text-slate-400 font-mono">hollow, knight, hades, celeste</p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-rose-400 font-bold text-[11px]">4. Co-op & Sandbox</span>
+              <p class="text-[10px] text-slate-400 font-mono">helldivers, minecraft, palworld</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 2.3: Sentiment Classifier & Confusion Matrix -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            6. Sentiment Classifier & Held-Out Test Evaluation
+          </div>
+          <div class="grid grid-cols-4 gap-2 text-center">
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-[10px] text-slate-400 uppercase">Accuracy</span>
+              <p class="text-base font-bold text-emerald-400">84.0%</p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-[10px] text-slate-400 uppercase">Precision</span>
+              <p class="text-base font-bold text-indigo-400">84.8%</p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-[10px] text-slate-400 uppercase">Recall</span>
+              <p class="text-base font-bold text-amber-400">84.0%</p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-[10px] text-slate-400 uppercase">F1-Score</span>
+              <p class="text-base font-bold text-rose-400">83.9%</p>
+            </div>
+          </div>
+          <div class="p-2.5 rounded bg-slate-950 border border-slate-800">
+            <span class="text-[10px] font-bold text-slate-400 uppercase block mb-1">Held-Out Confusion Matrix (N = 50 test samples):</span>
+            <div class="grid grid-cols-4 gap-1 text-center font-mono text-[11px]">
+              <span class="text-slate-500">Act\Pred</span>
+              <span class="text-rose-400">Neg</span>
+              <span class="text-indigo-400">Neu</span>
+              <span class="text-emerald-400">Pos</span>
+              <span class="text-rose-400">Neg</span>
+              <span class="bg-emerald-950 text-emerald-400 font-bold rounded">11</span>
+              <span>1</span>
+              <span>2</span>
+              <span class="text-indigo-400">Neu</span>
+              <span>1</span>
+              <span class="bg-emerald-950 text-emerald-400 font-bold rounded">8</span>
+              <span>2</span>
+              <span class="text-emerald-400">Pos</span>
+              <span>1</span>
+              <span>1</span>
+              <span class="bg-emerald-950 text-emerald-400 font-bold rounded">24</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card 2.4: Social Network Mining -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-indigo-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+            7. Social Media Mining (NetworkX Graph Analysis)
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Constructs directed graphs $G=(V, E)$ from reply-to links and mentions with Fruchterman-Reingold spring layouts:
+          </p>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-indigo-400 font-bold text-[11px]">Degree Centrality</span>
+              <p class="text-[10px] text-slate-400">Measures direct conversational volume ($C_D = \frac{\text{deg}}{N-1}$)</p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800">
+              <span class="text-amber-400 font-bold text-[11px]">Betweenness Centrality</span>
+              <p class="text-[10px] text-slate-400">Identifies gatekeepers bridging separate channel cliques</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ================= COLUMN 3 ================= -->
+      <div class="space-y-6">
+
+        <!-- Card 3.1: Hybrid Game Recommender -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-pink-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
+            8. Hybrid Game Recommendation Engine
+          </div>
+          <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 text-xs font-mono text-indigo-300 text-center">
+            Score = CosineSim(&mathbf;q, &mathbf;d) + 0.15&times;|&Gamma;| + &gamma;&times;Sentiment
+          </div>
+          <ul class="text-xs text-slate-300 space-y-1.5 list-disc pl-4">
+            <li><strong>Content Filtering:</strong> Cosine similarity on TF-IDF metadata profiles (20 curated titles).</li>
+            <li><strong>Genre Matching:</strong> Overlap bonus for user selected genres.</li>
+            <li><strong>Sentiment Augmentation:</strong> Boosts titles praised in active Discord chat (+0.08 / -0.05).</li>
+            <li><strong>Zero Cold-Start:</strong> Does not require collaborative matrix factorization.</li>
+          </ul>
+        </section>
+
+        <!-- Card 3.2: Web Analytics & A/B Z-Testing -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-blue-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+            9. Web Analytics & Statistical A/B Testing Simulator
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Evaluates UI variations using two-sample proportion Z-tests:
+          </p>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2 rounded bg-slate-950 border border-slate-800 text-center">
+              <span class="text-[10px] text-slate-400 uppercase">Test Statistic</span>
+              <p class="text-sm font-mono font-bold text-blue-400">Z = (&Delta;p) / SE<sub>pool</sub></p>
+            </div>
+            <div class="p-2 rounded bg-slate-950 border border-slate-800 text-center">
+              <span class="text-[10px] text-slate-400 uppercase">Significance Rule</span>
+              <p class="text-sm font-mono font-bold text-emerald-400">P &lt; 0.05 &rArr; Reject H<sub>0</sub></p>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400 leading-tight">
+            Computes 95% Confidence Intervals and outputs actionable product decisions.
+          </p>
+        </section>
+
+        <!-- Card 3.3: MLOps Drift Monitoring -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-yellow-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+            10. MLOps Drift Monitoring (PSI Metric)
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Monitors longitudinal Covariate & Concept Drift across Baseline (first 50%) vs Recent (last 50%) periods:
+          </p>
+          <div class="p-2.5 rounded-lg bg-slate-950 border border-slate-800 text-xs font-mono text-center text-amber-300">
+            PSI = &Sigma; (Recent% - Base%) &times; ln(Recent% / Base%)
+          </div>
+          <div class="text-[11px] text-slate-300 space-y-1">
+            <p>&bull; <strong class="text-emerald-400">PSI &lt; 0.1:</strong> Stable distribution (No shift).</p>
+            <p>&bull; <strong class="text-amber-400">0.1 &le; PSI &lt; 0.25:</strong> Moderate covariate shift.</p>
+            <p>&bull; <strong class="text-rose-400">PSI &ge; 0.25:</strong> Severe drift requiring model retraining.</p>
+          </div>
+        </section>
+
+        <!-- Card 3.4: Ethics & Conclusion -->
+        <section class="poster-card p-5 rounded-xl bg-slate-900 border border-slate-800 space-y-3">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            11. Ethics & Responsible AI Summary
+          </div>
+          <ul class="text-xs text-slate-300 space-y-1.5 list-disc pl-4">
+            <li><strong>User Pseudonymization:</strong> All Discord IDs hashed (e.g. <code class="text-amber-400">user_shadow_99</code>).</li>
+            <li><strong>Slice Bias Audits:</strong> Parity audited across channels, length tiers, and slang.</li>
+            <li><strong>Transparent XAI:</strong> Linear feature attributions explain every prediction.</li>
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+
+    <!-- Poster Footer -->
+    <footer class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+      <div>
+        <strong>Discord Text Web Analysis Capstone</strong> &bull; Complete Source Code Verified with 18 Automated Unit Tests
+      </div>
+      <div class="flex items-center gap-4 text-slate-300 font-mono text-[11px]">
+        <span>FastAPI :8000</span>
+        <span>&bull;</span>
+        <span>React Vite :5173</span>
+        <span>&bull;</span>
+        <span>SQLite ORM</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

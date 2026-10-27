@@ -42,14 +42,23 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# CORS Middleware
+# CORS Middleware configured for production & local development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Permits all localhost dev origins
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Root level health checks for cloud platforms (Render, Railway, AWS)
+@app.get("/health")
+def root_health():
+    return {
+        "status": "healthy",
+        "service": "Discord Text Web Analysis API",
+        "version": settings.VERSION
+    }
 
 # Mount Routers under /api
 app.include_router(dashboard_router, prefix="/api")

@@ -1,4 +1,10 @@
-const BASE_URL = '/api';
+// Dynamic Base URL: uses VITE_API_URL environment variable in production (e.g., on Vercel),
+// or falls back to '/api' for Vite's local dev proxy.
+const rawUrl = import.meta.env.VITE_API_URL || '';
+const cleanRaw = rawUrl.replace(/\/+$/, '');
+const BASE_URL = cleanRaw
+  ? (cleanRaw.endsWith('/api') ? cleanRaw : `${cleanRaw}/api`)
+  : '/api';
 
 /**
  * Generic API fetch helper with response parsing and error handling.

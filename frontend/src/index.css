@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#111214] text-[#dbdee1] font-sans antialiased;
+  }
+}
+
+/* Custom Discord-style Dark Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1f22;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2d31;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #35373c;
+}
+
+/* Glass & Card styles */
+.discord-card {
+  @apply bg-[#2b2d31] border border-[#35373c] rounded-xl shadow-lg;
+}
+
+.discord-input {
+  @apply bg-[#1e1f22] border border-[#3b3e45] text-white rounded-lg px-3 py-2 focus:outline-none focus:border-[#5865F2] transition;
+}
+
+.discord-btn-primary {
+  @apply bg-[#5865F2] hover:bg-[#4752C4] text-white font-medium px-4 py-2 rounded-lg transition flex items-center justify-center gap-2;
+}
+
+.discord-btn-secondary {
+  @apply bg-[#35373c] hover:bg-[#404249] text-white font-medium px-4 py-2 rounded-lg transition flex items-center justify-center gap-2;
+}

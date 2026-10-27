@@ -1,0 +1,472 @@
+[
+  {
+    "id": "game-1",
+    "title": "Valorant",
+    "developer": "Riot Games",
+    "genres": [
+      "Tactical Shooter",
+      "FPS",
+      "Competitive Multiplayer",
+      "Esports"
+    ],
+    "description": "A 5v5 character-based tactical shooter where precise gunplay meets unique agent abilities. Highly competitive with tactical team coordination, map control, and ranked climb.",
+    "tags": [
+      "fps",
+      "tactical",
+      "multiplayer",
+      "ranked",
+      "shooter",
+      "hero shooter",
+      "clutch",
+      "esports"
+    ],
+    "rating": 4.5,
+    "release_year": 2020
+  },
+  {
+    "id": "game-2",
+    "title": "Elden Ring",
+    "developer": "FromSoftware",
+    "genres": [
+      "Action RPG",
+      "Open World",
+      "Souls-like",
+      "Dark Fantasy"
+    ],
+    "description": "An expansive dark fantasy action-RPG featuring vast landscapes, challenging boss fights, intricate dungeon crawling, build variety, and atmospheric storytelling crafted with George R.R. Martin.",
+    "tags": [
+      "rpg",
+      "open world",
+      "souls-like",
+      "difficult",
+      "fantasy",
+      "boss fight",
+      "exploration",
+      "lore"
+    ],
+    "rating": 4.9,
+    "release_year": 2022
+  },
+  {
+    "id": "game-3",
+    "title": "Cyberpunk 2077",
+    "developer": "CD Projekt Red",
+    "genres": [
+      "Action RPG",
+      "Open World",
+      "Sci-Fi",
+      "Cyberpunk"
+    ],
+    "description": "An open-world narrative action adventure set in Night City, a megalopolis obsessed with power, glamour, and body modification. Features deep questlines, ray tracing graphics, and cyberware builds.",
+    "tags": [
+      "cyberpunk",
+      "sci-fi",
+      "open world",
+      "story rich",
+      "rpg",
+      "fps",
+      "futuristic",
+      "night city"
+    ],
+    "rating": 4.6,
+    "release_year": 2020
+  },
+  {
+    "id": "game-4",
+    "title": "Baldurs Gate 3",
+    "developer": "Larian Studios",
+    "genres": [
+      "CRPG",
+      "Turn-Based",
+      "Dungeons & Dragons",
+      "Story Rich"
+    ],
+    "description": "A story-rich, party-based RPG set in the universe of Dungeons & Dragons, where your choices shape a tale of fellowship, betrayal, sacrifice, and the lure of absolute power.",
+    "tags": [
+      "crpg",
+      "turn-based",
+      "dnd",
+      "story rich",
+      "choices matter",
+      "fantasy",
+      "co-op",
+      "tactical"
+    ],
+    "rating": 4.9,
+    "release_year": 2023
+  },
+  {
+    "id": "game-5",
+    "title": "Hades II",
+    "developer": "Supergiant Games",
+    "genres": [
+      "Roguelike",
+      "Action RPG",
+      "Hack and Slash",
+      "Indie"
+    ],
+    "description": "Battle beyond the Underworld using dark sorcery to take on the Titan of Time in this bewitching rogue-like dungeon crawler with rich Olympian storytelling and fast-paced combat.",
+    "tags": [
+      "roguelike",
+      "indie",
+      "fast-paced",
+      "mythology",
+      "action",
+      "hack and slash",
+      "soundtrack",
+      "dungeon crawler"
+    ],
+    "rating": 4.8,
+    "release_year": 2024
+  },
+  {
+    "id": "game-6",
+    "title": "Hollow Knight",
+    "developer": "Team Cherry",
+    "genres": [
+      "Metroidvania",
+      "Souls-like",
+      "2D Platformer",
+      "Indie"
+    ],
+    "description": "Forge your own path in Hollow Knight! An epic action adventure through a vast ruined kingdom of insects and heroes. Traditional 2D animation, tight platforming, and deep exploration.",
+    "tags": [
+      "metroidvania",
+      "indie",
+      "difficult",
+      "atmospheric",
+      "2d",
+      "platformer",
+      "exploration",
+      "lore"
+    ],
+    "rating": 4.9,
+    "release_year": 2017
+  },
+  {
+    "id": "game-7",
+    "title": "Apex Legends",
+    "developer": "Respawn Entertainment",
+    "genres": [
+      "Battle Royale",
+      "FPS",
+      "Movement Shooter",
+      "Hero Shooter"
+    ],
+    "description": "Conquer with character in Apex Legends, a free-to-play Hero shooter where legendary characters with powerful abilities team up to battle for fame & fortune on the fringes of the Frontier.",
+    "tags": [
+      "battle royale",
+      "fps",
+      "fast movement",
+      "hero shooter",
+      "teamwork",
+      "multiplayer",
+      "ranked"
+    ],
+    "rating": 4.3,
+    "release_year": 2019
+  },
+  {
+    "id": "game-8",
+    "title": "Overwatch 2",
+    "developer": "Blizzard Entertainment",
+    "genres": [
+      "Hero Shooter",
+      "Team FPS",
+      "Esports",
+      "Action"
+    ],
+    "description": "An always-on and free-to-play team-based action game set in an optimistic future, where every match is the ultimate 5v5 battlefield brawl with unique heroes.",
+    "tags": [
+      "hero shooter",
+      "team-based",
+      "multiplayer",
+      "fps",
+      "competitive",
+      "esports",
+      "abilities"
+    ],
+    "rating": 3.9,
+    "release_year": 2022
+  },
+  {
+    "id": "game-9",
+    "title": "Minecraft",
+    "developer": "Mojang Studios",
+    "genres": [
+      "Sandbox",
+      "Survival",
+      "Adventure",
+      "Building"
+    ],
+    "description": "Explore infinite worlds and build everything from the simplest of homes to the grandest of castles in creative or survival mode with redstone automation and community mods.",
+    "tags": [
+      "sandbox",
+      "survival",
+      "crafting",
+      "building",
+      "multiplayer",
+      "relaxing",
+      "open world",
+      "creative"
+    ],
+    "rating": 4.8,
+    "release_year": 2011
+  },
+  {
+    "id": "game-10",
+    "title": "Genshin Impact",
+    "developer": "miHoYo",
+    "genres": [
+      "Action RPG",
+      "Open World",
+      "Gacha",
+      "Anime"
+    ],
+    "description": "Embark on a journey across Teyvat to seek answers from The Seven. Explore the wondrous world, join forces with diverse characters, and unravel mysteries with elemental magic combat.",
+    "tags": [
+      "open world",
+      "anime",
+      "action rpg",
+      "gacha",
+      "elemental combat",
+      "exploration",
+      "story rich"
+    ],
+    "rating": 4.4,
+    "release_year": 2020
+  },
+  {
+    "id": "game-11",
+    "title": "Helldivers 2",
+    "developer": "Arrowhead Game Studios",
+    "genres": [
+      "Co-op Shooter",
+      "Third-Person Shooter",
+      "Sci-Fi",
+      "PvE"
+    ],
+    "description": "Join the Helldivers and fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person co-op team shooter against Terminid swarms and Automaton legions.",
+    "tags": [
+      "co-op",
+      "pve",
+      "shooter",
+      "sci-fi",
+      "tactical",
+      "friendly fire",
+      "action",
+      "chaotic"
+    ],
+    "rating": 4.7,
+    "release_year": 2024
+  },
+  {
+    "id": "game-12",
+    "title": "Stardew Valley",
+    "developer": "ConcernedApe",
+    "genres": [
+      "Farming Sim",
+      "RPG",
+      "Life Sim",
+      "Indie"
+    ],
+    "description": "You've inherited your grandfather's old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, set out to begin your new cozy life and revive the town.",
+    "tags": [
+      "cozy",
+      "farming",
+      "life sim",
+      "relaxing",
+      "indie",
+      "pixel art",
+      "crafting",
+      "multiplayer"
+    ],
+    "rating": 4.9,
+    "release_year": 2016
+  },
+  {
+    "id": "game-13",
+    "title": "Counter-Strike 2",
+    "developer": "Valve",
+    "genres": [
+      "Tactical Shooter",
+      "FPS",
+      "Esports",
+      "Competitive"
+    ],
+    "description": "For over two decades, Counter-Strike has offered an elite competitive experience. CS2 delivers the largest technical leap forward in CS history with sub-tick updates and volumetric smokes.",
+    "tags": [
+      "tactical",
+      "fps",
+      "competitive",
+      "esports",
+      "multiplayer",
+      "economy",
+      "aim",
+      "ranked"
+    ],
+    "rating": 4.2,
+    "release_year": 2023
+  },
+  {
+    "id": "game-14",
+    "title": "Lethal Company",
+    "developer": "Zeekerss",
+    "genres": [
+      "Survival Horror",
+      "Co-op",
+      "Indie",
+      "Comedy Horror"
+    ],
+    "description": "You are a contracted worker for the Company. Your job is to collect scrap from abandoned, industrialized moons to meet the Company's profit quota while surviving deadly monsters.",
+    "tags": [
+      "co-op",
+      "horror",
+      "funny",
+      "proximity voice",
+      "indie",
+      "survival horror",
+      "monsters"
+    ],
+    "rating": 4.7,
+    "release_year": 2023
+  },
+  {
+    "id": "game-15",
+    "title": "The Witcher 3: Wild Hunt",
+    "developer": "CD Projekt Red",
+    "genres": [
+      "Action RPG",
+      "Open World",
+      "Dark Fantasy",
+      "Story Rich"
+    ],
+    "description": "As war rages across the Northern Realms, take on the greatest contract of your life \u2014 tracking down Ciri, the Child of Prophecy, a living weapon that can alter the shape of the world.",
+    "tags": [
+      "open world",
+      "rpg",
+      "story rich",
+      "fantasy",
+      "sword fighting",
+      "monsters",
+      "masterpiece"
+    ],
+    "rating": 4.9,
+    "release_year": 2015
+  },
+  {
+    "id": "game-16",
+    "title": "Sea of Thieves",
+    "developer": "Rare",
+    "genres": [
+      "Action Adventure",
+      "Pirate",
+      "Multiplayer",
+      "Open World"
+    ],
+    "description": "Sea of Thieves offers the essential pirate experience, from sailing and fighting to exploring and looting \u2014 everything you need to live the pirate life and become a legend.",
+    "tags": [
+      "pirates",
+      "multiplayer",
+      "co-op",
+      "pvpve",
+      "sailing",
+      "adventure",
+      "open world"
+    ],
+    "rating": 4.4,
+    "release_year": 2018
+  },
+  {
+    "id": "game-17",
+    "title": "Celeste",
+    "developer": "Maddy Makes Games",
+    "genres": [
+      "Platformer",
+      "Indie",
+      "Precision Platformer",
+      "Story Rich"
+    ],
+    "description": "Help Madeline survive her inner demons on her journey to the top of Celeste Mountain in this super-tight, hand-crafted precision platformer from the creators of TowerFall.",
+    "tags": [
+      "indie",
+      "precision platformer",
+      "difficult",
+      "great soundtrack",
+      "emotional",
+      "2d",
+      "story"
+    ],
+    "rating": 4.9,
+    "release_year": 2018
+  },
+  {
+    "id": "game-18",
+    "title": "Monster Hunter: World",
+    "developer": "Capcom",
+    "genres": [
+      "Action RPG",
+      "Co-op",
+      "Hunting",
+      "Boss Fight"
+    ],
+    "description": "Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breathing ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand.",
+    "tags": [
+      "hunting",
+      "action rpg",
+      "co-op",
+      "monsters",
+      "crafting",
+      "boss fights",
+      "weapons"
+    ],
+    "rating": 4.6,
+    "release_year": 2018
+  },
+  {
+    "id": "game-19",
+    "title": "Rocket League",
+    "developer": "Psyonix",
+    "genres": [
+      "Sports",
+      "Vehicular Soccer",
+      "Competitive",
+      "Esports"
+    ],
+    "description": "Soccer meets driving once again in the physics-based multiplayer vehicular mayhem hit. Take to the pitch for a fully-featured offline season mode, multiple game types, and intense ranked play.",
+    "tags": [
+      "sports",
+      "cars",
+      "competitive",
+      "physics",
+      "multiplayer",
+      "fast-paced",
+      "ranked"
+    ],
+    "rating": 4.5,
+    "release_year": 2015
+  },
+  {
+    "id": "game-20",
+    "title": "Palworld",
+    "developer": "Pocketpair",
+    "genres": [
+      "Survival",
+      "Open World",
+      "Creature Collector",
+      "Crafting"
+    ],
+    "description": "Fight, farm, build and work alongside mysterious creatures called Pals in this completely new multiplayer, open-world survival and crafting game.",
+    "tags": [
+      "creature collector",
+      "survival",
+      "crafting",
+      "open world",
+      "multiplayer",
+      "building",
+      "action"
+    ],
+    "rating": 4.3,
+    "release_year": 2024
+  }
+]
